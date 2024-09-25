@@ -28,16 +28,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className='flex'>
-          <div className='h-full hidden md:block w-[300px]'>
+        <div className="flex">
+          <div className="hidden h-[calc(100vh-56px)] w-[300px] md:block">
             <Sidebar />
           </div>
-          <div className='p-5 w-full md:max-w-[1140px]'>{children}</div>
+          <div className="w-full p-5 md:max-w-[1140px]">{children}</div>
         </div>
       </body>
     </html>
