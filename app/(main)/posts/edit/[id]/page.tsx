@@ -44,8 +44,6 @@ const PostEditPage = ({ params }: PostEditPageProps) => {
     },
   });
 
-  // https://www.youtube.com/watch?v=hhudoSMM0yU&t=5638s
-
   const handleSubmit = (data: z.infer<typeof formSchema>) => {};
   return (
     <div>
