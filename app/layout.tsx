@@ -40,16 +40,12 @@ export default function RootLayout({
           enableSystem={true}
           storageKey="theme"
         >
-          <Navbar />
-          <div className="flex">
-            <div className="hidden h-[calc(100vh-56px)] w-[300px] md:block">
-              <Sidebar />
-            </div>
-            <div className="w-full p-5 md:max-w-[1140px]">{children}</div>
-          </div>
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>
     </html>
   );
 }
+
+// https://www.youtube.com/watch?v=hhudoSMM0yU&t=6158s
