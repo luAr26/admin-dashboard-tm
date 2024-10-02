@@ -35,7 +35,6 @@ const PostEditPage = ({ params }: PostEditPageProps) => {
   const post = posts.find((post) => {
     return post.id === params.id;
   });
-  console.log(post);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
